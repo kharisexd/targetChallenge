@@ -1,0 +1,16 @@
+2 - 
+print('Sequência de Fibonacci')
+
+nSelecionado = int(input('Insira um numero para gerar a sequência de Fibonnaci: '))
+n1 = 0
+n2 = 1
+
+while n2 < nSelecionado:
+    aux = n1
+    n1 = n2
+    n2 += aux
+resultado = 'Não'
+if n2 == nSelecionado:
+    resultado = 'Sim'
+print(f'O numero está na sequencia de Fibonnaci ? {resultado}')
+
